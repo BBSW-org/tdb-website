@@ -1,0 +1,143 @@
+{{ define "main" }}
+<div class="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+    <section class="mx-auto max-w-4xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-wide text-primary-700">TrialDesignBench</p>
+        <h1 class="mt-4 text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl md:text-6xl">
+            Rigorous benchmark for evaluating AI agents in
+            <span class="text-primary-700">clinical trial design</span>
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-stone-600">
+            TrialDesignBench measures whether AI agents can complete high-stakes trial design workflows with
+            clinically grounded reasoning, auditable outputs, and reproducible evaluation.
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <a href="/leaderboard/" class="btn-primary">
+                View Leaderboard
+            </a>
+            <a href="/methodology/" class="btn-secondary">
+                Read Methodology
+            </a>
+        </div>
+    </section>
+
+    <section class="mt-20 grid gap-4 sm:grid-cols-3">
+        <div class="metric-card">
+            <p class="text-3xl font-bold text-stone-900">TBD</p>
+            <p class="mt-2 text-sm font-medium text-stone-600">Benchmark tasks</p>
+        </div>
+        <div class="metric-card">
+            <p class="text-3xl font-bold text-stone-900">TBD</p>
+            <p class="mt-2 text-sm font-medium text-stone-600">Evaluation checkpoints</p>
+        </div>
+        <div class="metric-card">
+            <p class="text-3xl font-bold text-stone-900">TBD</p>
+            <p class="mt-2 text-sm font-medium text-stone-600">Agent submissions</p>
+        </div>
+    </section>
+
+    <section class="mt-24" id="benchmark">
+        <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold text-stone-900">What TrialDesignBench Evaluates</h2>
+            <p class="mt-4 text-lg text-stone-600">
+                Agents must synthesize evidence, reason about design tradeoffs, and produce outputs that survive
+                clinical, statistical, and safety review.
+            </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="feature-card">
+                <div class="icon-badge">
+                    <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.5L19 8.5V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-stone-900">Protocol Reasoning</h3>
+                <p class="mt-2 text-sm text-stone-600">
+                    Transform trial objectives and clinical context into coherent protocol concepts.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="icon-badge">
+                    <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3v18m-4-4h8m-9-4h10M5 7h12" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-stone-900">Statistical Design</h3>
+                <p class="mt-2 text-sm text-stone-600">
+                    Select endpoints, estimands, assumptions, sample sizes, and adaptive design choices.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="icon-badge">
+                    <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-stone-900">Operational Feasibility</h3>
+                <p class="mt-2 text-sm text-stone-600">
+                    Balance enrollment, follow-up, site capacity, cost, and timeline constraints.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="mt-24 overflow-hidden rounded-lg border border-stone-200 bg-white">
+        <div class="border-b border-stone-200 px-6 py-5">
+            <h2 class="text-2xl font-bold text-stone-900">Leaderboard Preview</h2>
+            <p class="mt-2 text-sm text-stone-600">Public results will appear here when the benchmark is released.</p>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-stone-200 text-sm">
+                <thead class="bg-stone-100 text-left text-stone-600">
+                    <tr>
+                        <th class="px-6 py-3 font-semibold">Rank</th>
+                        <th class="px-6 py-3 font-semibold">Model</th>
+                        <th class="px-6 py-3 font-semibold">Agent</th>
+                        <th class="px-6 py-3 font-semibold">Pass Rate</th>
+                        <th class="px-6 py-3 font-semibold">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-200 text-stone-700">
+                    <tr>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">Pending</td>
+                        <td class="px-6 py-4">Pending</td>
+                        <td class="px-6 py-4">TBD</td>
+                        <td class="px-6 py-4">Not yet released</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="mt-24 rounded-lg bg-primary-900 p-8 text-white">
+        <div class="grid gap-8 lg:grid-cols-[1fr_2fr] lg:items-start">
+            <div>
+                <p class="text-sm font-semibold uppercase tracking-wide text-primary-200">Methodology</p>
+                <h2 class="mt-3 text-3xl font-bold">End-to-end completion, not isolated answers.</h2>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-md border border-white/15 p-4">
+                    <h3 class="font-semibold">Clinically anchored</h3>
+                    <p class="mt-2 text-sm text-primary-100">Tasks reflect realistic design decisions and expert review.</p>
+                </div>
+                <div class="rounded-md border border-white/15 p-4">
+                    <h3 class="font-semibold">Checkpoint graded</h3>
+                    <p class="mt-2 text-sm text-primary-100">Rubrics capture critical reasoning, artifacts, and safety constraints.</p>
+                </div>
+                <div class="rounded-md border border-white/15 p-4">
+                    <h3 class="font-semibold">Reproducible</h3>
+                    <p class="mt-2 text-sm text-primary-100">Versioned inputs and recorded trajectories support auditability.</p>
+                </div>
+                <div class="rounded-md border border-white/15 p-4">
+                    <h3 class="font-semibold">High stakes</h3>
+                    <p class="mt-2 text-sm text-primary-100">Unsafe or unsupported recommendations block successful completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

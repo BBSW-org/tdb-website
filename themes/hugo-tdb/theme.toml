@@ -1,0 +1,11 @@
+name = "Hugo TrialDesignBench"
+license = "MIT"
+description = "A Hugo theme for TrialDesignBench"
+homepage = "https://trialdesignbench.org/"
+tags = ["benchmark", "ai", "clinical-trials", "statistics"]
+features = ["tailwindcss", "responsive", "benchmark"]
+min_version = "0.112.0"
+
+[author]
+  name = "TrialDesignBench authors"
+  homepage = "https://github.com/BBSW-org/tdb-website"
