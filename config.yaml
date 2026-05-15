@@ -1,0 +1,38 @@
+baseURL: "https://trialdesignbench.org/"
+locale: en-us
+title: TrialDesignBench
+theme: hugo-tdb
+menu:
+  main:
+    - name: Benchmark
+      url: /benchmark/
+      weight: 1
+    - name: Leaderboard
+      url: /leaderboard/
+      weight: 2
+    - name: Tasks
+      url: /tasks/
+      weight: 3
+    - name: Methodology
+      url: /methodology/
+      weight: 4
+    - name: About
+      url: /about/
+      weight: 5
+
+params:
+  github: https://github.com/BBSW-org/TrialDesignBench
+  logo:
+    alt: TrialDesignBench logo
+    height: 50
+    url: images/logo.svg
+    width: 50
+  googleAnalytics: ''
+  description: 'A rigorous benchmark for evaluating AI agents in high-stakes clinical trial design.'
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: catppuccin-mocha
